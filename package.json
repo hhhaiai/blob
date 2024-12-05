@@ -1,8 +1,8 @@
 {
-  "name": "@axetroy/blog",
+  "name": "@hhhaiai/blog",
   "version": "0.1.2",
   "private": true,
-  "homepage": "http://www.axetroy.xyz",
+  "homepage": "https://hhhaiai.github.io/blog",
   "keywords": [],
   "dependencies": {
     "@ant-design/icons": "4.7.0",
