@@ -29,7 +29,7 @@ export default function Footer() {
           <ul>
             <li>
               <a
-                href="https://github.com/axetroy"
+                href="https://github.com/hhhaiai"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
@@ -38,22 +38,22 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://github.com/axetroy/blog"
+                href="https://github.com/hhhaiai/blog"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 网站源码
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
-                href="https://github.com/axetroy?utf8=%E2%9C%93&tab=repositories&q=vscode&type=source&language="
+                href="https://github.com/hhhaiai?utf8=%E2%9C%93&tab=repositories&type=source&language="
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 我的 vscode 扩展
               </a>
-            </li>
+            </li> */}
           </ul>
         </Col>
         <Col
@@ -64,9 +64,9 @@ export default function Footer() {
           xl={{ span: 4 }}
           xxl={{ span: 4 }}
         >
-          <p className="footer-item-name">免费的API服务</p>
-          <ul>
-            <li>
+          {/* <p className="footer-item-name">免费的API服务</p>
+          <ul> */}
+            {/* <li>
               <a
                 href="https://github.com/axetroy/ip"
                 target="_blank"
@@ -74,8 +74,8 @@ export default function Footer() {
               >
                 获取当前IP
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a
                 href="https://github.com/axetroy/locate"
                 target="_blank"
@@ -101,8 +101,8 @@ export default function Footer() {
               >
                 发送邮件
               </a>
-            </li>
-          </ul>
+            </li> */}
+          {/* </ul> */}
         </Col>
         <Col
           xs={{ span: 11, offset: 1 }}
@@ -116,14 +116,14 @@ export default function Footer() {
           <ul>
             <li>
               {/* eslint-disable-next-line */}
-              <a
+              {/* <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 留言加个友链可好?
-              </a>
+              </a> */}
             </li>
           </ul>
         </Col>
@@ -155,9 +155,9 @@ export default function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/axetroy"
+                href="https://github.com/hhhaiai"
               >
-                Axetroy
+                sanbo
               </a>
             </li>
             <li>

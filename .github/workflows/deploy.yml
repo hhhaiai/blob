@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
-  push: # 移除 branches 限制
-    paths:
-      - '**' # 监听所有文件的更改
+  push:
+    branches:
+      - master # 根据你的主分支名称调整
 
 jobs:
   build:
@@ -12,22 +12,29 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.13.0'
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Inject GitHub Secrets into config.json
+        run: |
+          jq --arg client_id "${{ secrets.CLIENT_ID }}" --arg client_secret "${{ secrets.CLIENT_SECRET }}" \
+            '.github_client_id = $client_id | .github_client_secret = $client_secret' config.json > temp.json && mv temp.json config.json
+
       - name: Install dependencies
         run: npm install
 
       - name: Build and export
         run: npm run export
 
-      #   - name: Deploy to GitHub Pages
-      #     uses: peaceiris/actions-gh-pages@v3
-      #     with:
-      #       github_token: ${{ secrets.GITHUB_TOKEN }}
-      #       publish_dir: ./out
-      #       destination_dir: blog
-      - name: Conditional Deploy
-        if: github.ref_name == 'main' || github.ref_name == 'master' || startsWith(github.ref_name, 'release/')
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           destination_dir: blog
+          branch: gh-pages # 指定部署到 gh-pages 分支
