@@ -27,7 +27,8 @@
   },
   "devDependencies": {
     "@types/react": "18.2.19",
-    "@types/react-dom": "18.2.7"
+    "@types/react-dom": "18.2.7",
+    "eslint": "^9.16.0"
   },
   "scripts": {
     "format": "prettier --write '{src,app}/**/*.{js,jsx,css,json,md}'",

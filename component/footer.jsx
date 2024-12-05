@@ -6,14 +6,6 @@ import Now from './now'
 
 export default function Footer() {
   const created = new Date('2016-11-09 14:22:33')
-
-  // const LATEST_BUILD_DATE = process.env.REACT_APP_LATEST_BUILD_DATE || new Date()
-  // const LAST_COMMIT_HASH = process.env.REACT_APP_LAST_COMMIT_HASH
-  // const LAST_COMMIT_TREE_HASH = process.env.REACT_APP_LAST_COMMIT_TREE_HASH
-  // const LAST_COMMIT_DATE = process.env.REACT_APP_LAST_COMMIT_DATE || new Date()
-  // const LAST_COMMIT_AUTHOR = process.env.REACT_APP_LAST_COMMIT_AUTHOR
-  // const LAST_COMMIT_MESSAGE = process.env.REACT_APP_LAST_COMMIT_MESSAGE
-
   return (
     <footer id="footer">
       <Row>
@@ -45,65 +37,10 @@ export default function Footer() {
                 网站源码
               </a>
             </li>
-            {/* <li>
-              <a
-                href="https://github.com/hhhaiai?utf8=%E2%9C%93&tab=repositories&type=source&language="
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                我的 vscode 扩展
-              </a>
-            </li> */}
+           
           </ul>
         </Col>
-        <Col
-          xs={{ span: 11 }}
-          sm={{ span: 5 }}
-          md={{ span: 4 }}
-          lg={{ span: 4 }}
-          xl={{ span: 4 }}
-          xxl={{ span: 4 }}
-        >
-          {/* <p className="footer-item-name">免费的API服务</p>
-          <ul> */}
-            {/* <li>
-              <a
-                href="https://github.com/axetroy/ip"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                获取当前IP
-              </a>
-            </li> */}
-            {/* <li>
-              <a
-                href="https://github.com/axetroy/locate"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                根据IP获取定位信息
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/axetroy/proxy"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                HTTP请求代理
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/axetroy/email"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                发送邮件
-              </a>
-            </li> */}
-          {/* </ul> */}
-        </Col>
+        
         <Col
           xs={{ span: 11, offset: 1 }}
           sm={{ span: 5 }}
@@ -116,14 +53,14 @@ export default function Footer() {
           <ul>
             <li>
               {/* eslint-disable-next-line */}
-              {/* <a
+              <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
               >
                 留言加个友链可好?
-              </a> */}
+              </a>
             </li>
           </ul>
         </Col>
@@ -173,26 +110,7 @@ export default function Footer() {
         </Col>
       </Row>
 
-      {/* <div className="text-center">
-        最近由 {LAST_COMMIT_AUTHOR} 于{' '}
-        {formatDistanceToNow(new Date(LAST_COMMIT_DATE), {
-          locale: chinese
-        })}{' '}
-        前更改代码(
-        <a href={'https://github.com/axetroy/blog/commit/' + LAST_COMMIT_HASH}>
-          {LAST_COMMIT_MESSAGE}
-        </a>
-        ). 于{' '}
-        {formatDistanceToNow(new Date(LATEST_BUILD_DATE), {
-          locale: chinese
-        })}{' '}
-        前更新网站. 当前网站源码{' '}
-        <a
-          href={'https://github.com/axetroy/blog/tree/' + LAST_COMMIT_TREE_HASH}
-        >
-          {LAST_COMMIT_TREE_HASH}
-        </a>
-      </div> */}
+  
       <style jsx>
         {`
           #footer {
